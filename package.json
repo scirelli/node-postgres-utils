@@ -1,0 +1,27 @@
+{
+  "name": "node-postgres-utils",
+  "version": "1.0.0",
+  "description": "Additional functionality for node-postgres.",
+  "main": "index.js",
+  "scripts": {
+    "test": "PGUSER=postgres PGHOST=localhost PGPASSWORD=$PGPASSWORD PGDATABASE=postgres PGPORT=5432 node --inspect-brk src/tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scirelli/node-postgres-utils.git"
+  },
+  "keywords": [
+    "postgres",
+    "node"
+  ],
+  "author": "Steve Cirelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scirelli/node-postgres-utils/issues"
+  },
+  "homepage": "https://github.com/scirelli/node-postgres-utils#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "pg": "^7.18.2"
+  }
+}
