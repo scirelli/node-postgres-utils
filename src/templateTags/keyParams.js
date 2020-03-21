@@ -2,7 +2,8 @@ module.exports = {
     keyParams: (...vars)=> {
         let result = keyParams.apply(null, vars);
         return [result.query, result.values];
-    }
+    },
+    keyParams2: keyParams
 };
 
 function keyParams(strings, ...vars) {
@@ -12,7 +13,6 @@ function keyParams(strings, ...vars) {
     for(let i=0, l=strings.length, part, value; i<l; i++) {
         part = strings[i];
         value = vars[i];
-
         query += part;
 
         if(value === undefined) continue;
